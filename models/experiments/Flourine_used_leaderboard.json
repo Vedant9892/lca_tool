@@ -1,0 +1,35 @@
+{
+  "target": "flourine_g",
+  "leaderboard": [
+    {
+      "model_name": "HistGradientBoosting",
+      "rmse": 0.00010376401327005474,
+      "r2": 0.9992110189310244,
+      "train_seconds": 0.489
+    },
+    {
+      "model_name": "GradientBoosting",
+      "rmse": 0.00010841235672308181,
+      "r2": 0.9991387472284339,
+      "train_seconds": 1.261
+    },
+    {
+      "model_name": "RandomForest",
+      "rmse": 0.00012019639016460773,
+      "r2": 0.9989413414455023,
+      "train_seconds": 0.425
+    },
+    {
+      "model_name": "LGBMRegressor",
+      "rmse": 0.00019547004077502973,
+      "r2": 0.9972001583564536,
+      "train_seconds": 0.31
+    },
+    {
+      "model_name": "XGBRegressor",
+      "rmse": 0.0002474443323368069,
+      "r2": 0.995513289136103,
+      "train_seconds": 0.225
+    }
+  ]
+}

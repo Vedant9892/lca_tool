@@ -1,0 +1,7 @@
+{
+  "target": "so2_g",
+  "winner": "GradientBoosting",
+  "rmse": 0.007937280561352985,
+  "r2": 0.9996480002902336,
+  "n_test": 50
+}

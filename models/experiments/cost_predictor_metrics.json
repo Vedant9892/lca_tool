@@ -1,0 +1,7 @@
+{
+  "target": "manufacturing_cost_per_unit",
+  "winner": "XGBRegressor",
+  "rmse": 1.0338612976728097,
+  "r2": 0.9624092666758001,
+  "n_test": 120
+}

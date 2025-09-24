@@ -1,0 +1,44 @@
+{
+  "energy_predictor": {
+    "target": "electricity_kwh",
+    "winner": "XGBRegressor",
+    "rmse": 2.139212979358881,
+    "r2": 0.9760792012658291,
+    "n_test": 170
+  },
+  "emissions_predictor": {
+    "target": "carbon_kgco2e",
+    "winner": "RandomForest",
+    "rmse": 0.5965159387636606,
+    "r2": 0.9658394653600406,
+    "n_test": 170
+  },
+  "cost_predictor": {
+    "target": "manufacturing_cost_per_unit",
+    "winner": "XGBRegressor",
+    "rmse": 1.0338612976728097,
+    "r2": 0.9624092666758001,
+    "n_test": 120
+  },
+  "water_waste": {
+    "target": "wastewater_l",
+    "winner": "GradientBoosting",
+    "rmse": 4467.694976925934,
+    "r2": 0.9681891857962176,
+    "n_test": 170
+  },
+  "Flourine_used": {
+    "target": "flourine_g",
+    "winner": "HistGradientBoosting",
+    "rmse": 0.00010376401327005474,
+    "r2": 0.9992110189310244,
+    "n_test": 50
+  },
+  "so2_g": {
+    "target": "so2_g",
+    "winner": "GradientBoosting",
+    "rmse": 0.007937280561352985,
+    "r2": 0.9996480002902336,
+    "n_test": 50
+  }
+}

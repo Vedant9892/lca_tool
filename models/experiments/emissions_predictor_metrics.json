@@ -1,0 +1,7 @@
+{
+  "target": "carbon_kgco2e",
+  "winner": "RandomForest",
+  "rmse": 0.5965159387636606,
+  "r2": 0.9658394653600406,
+  "n_test": 170
+}

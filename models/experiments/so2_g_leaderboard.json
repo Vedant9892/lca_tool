@@ -1,0 +1,35 @@
+{
+  "target": "so2_g",
+  "leaderboard": [
+    {
+      "model_name": "GradientBoosting",
+      "rmse": 0.007937280561352985,
+      "r2": 0.9996480002902336,
+      "train_seconds": 1.284
+    },
+    {
+      "model_name": "XGBRegressor",
+      "rmse": 0.010241295792020724,
+      "r2": 0.9994139850960503,
+      "train_seconds": 0.504
+    },
+    {
+      "model_name": "RandomForest",
+      "rmse": 0.013072345597705584,
+      "r2": 0.9990452143485098,
+      "train_seconds": 0.398
+    },
+    {
+      "model_name": "HistGradientBoosting",
+      "rmse": 0.030030653934107067,
+      "r2": 0.994961184918255,
+      "train_seconds": 0.271
+    },
+    {
+      "model_name": "LGBMRegressor",
+      "rmse": 0.0332781978711045,
+      "r2": 0.993812453988923,
+      "train_seconds": 0.354
+    }
+  ]
+}

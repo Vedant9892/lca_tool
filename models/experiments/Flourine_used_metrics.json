@@ -1,0 +1,7 @@
+{
+  "target": "flourine_g",
+  "winner": "HistGradientBoosting",
+  "rmse": 0.00010376401327005474,
+  "r2": 0.9992110189310244,
+  "n_test": 50
+}

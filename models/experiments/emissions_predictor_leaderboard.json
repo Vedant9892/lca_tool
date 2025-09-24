@@ -1,0 +1,35 @@
+{
+  "target": "carbon_kgco2e",
+  "leaderboard": [
+    {
+      "model_name": "RandomForest",
+      "rmse": 0.5965159387636606,
+      "r2": 0.9658394653600406,
+      "train_seconds": 0.871
+    },
+    {
+      "model_name": "GradientBoosting",
+      "rmse": 0.7443757057654835,
+      "r2": 0.9468057199335624,
+      "train_seconds": 2.692
+    },
+    {
+      "model_name": "XGBRegressor",
+      "rmse": 0.8674483202688089,
+      "r2": 0.9277616570822629,
+      "train_seconds": 1.974
+    },
+    {
+      "model_name": "LGBMRegressor",
+      "rmse": 1.054163765984004,
+      "r2": 0.8933166307064917,
+      "train_seconds": 1.561
+    },
+    {
+      "model_name": "HistGradientBoosting",
+      "rmse": 1.0608965917384774,
+      "r2": 0.891949529411186,
+      "train_seconds": 0.557
+    }
+  ]
+}

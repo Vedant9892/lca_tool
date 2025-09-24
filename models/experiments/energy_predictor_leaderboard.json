@@ -1,0 +1,35 @@
+{
+  "target": "electricity_kwh",
+  "leaderboard": [
+    {
+      "model_name": "XGBRegressor",
+      "rmse": 2.139212979358881,
+      "r2": 0.9760792012658291,
+      "train_seconds": 2.124
+    },
+    {
+      "model_name": "GradientBoosting",
+      "rmse": 2.5953283410747794,
+      "r2": 0.9647911171351984,
+      "train_seconds": 2.696
+    },
+    {
+      "model_name": "RandomForest",
+      "rmse": 3.2391899709130567,
+      "r2": 0.9451545675331575,
+      "train_seconds": 0.83
+    },
+    {
+      "model_name": "LGBMRegressor",
+      "rmse": 3.5479823317834014,
+      "r2": 0.9341992984398267,
+      "train_seconds": 1.641
+    },
+    {
+      "model_name": "HistGradientBoosting",
+      "rmse": 3.777844956097599,
+      "r2": 0.9253970694324353,
+      "train_seconds": 2.34
+    }
+  ]
+}

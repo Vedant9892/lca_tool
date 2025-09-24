@@ -1,0 +1,7 @@
+{
+  "target": "wastewater_l",
+  "winner": "GradientBoosting",
+  "rmse": 4467.694976925934,
+  "r2": 0.9681891857962176,
+  "n_test": 170
+}

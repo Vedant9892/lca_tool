@@ -1,0 +1,35 @@
+{
+  "target": "wastewater_l",
+  "leaderboard": [
+    {
+      "model_name": "GradientBoosting",
+      "rmse": 4467.694976925934,
+      "r2": 0.9681891857962176,
+      "train_seconds": 2.739
+    },
+    {
+      "model_name": "XGBRegressor",
+      "rmse": 5261.117193313559,
+      "r2": 0.9558872932006622,
+      "train_seconds": 2.017
+    },
+    {
+      "model_name": "RandomForest",
+      "rmse": 5298.233838559885,
+      "r2": 0.9552626763459693,
+      "train_seconds": 0.91
+    },
+    {
+      "model_name": "LGBMRegressor",
+      "rmse": 6776.107250168519,
+      "r2": 0.9268240620348316,
+      "train_seconds": 1.437
+    },
+    {
+      "model_name": "HistGradientBoosting",
+      "rmse": 6831.07589143444,
+      "r2": 0.9256320215991805,
+      "train_seconds": 0.334
+    }
+  ]
+}

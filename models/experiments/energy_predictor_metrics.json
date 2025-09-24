@@ -1,0 +1,7 @@
+{
+  "target": "electricity_kwh",
+  "winner": "XGBRegressor",
+  "rmse": 2.139212979358881,
+  "r2": 0.9760792012658291,
+  "n_test": 170
+}

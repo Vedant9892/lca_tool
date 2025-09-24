@@ -1,0 +1,35 @@
+{
+  "target": "manufacturing_cost_per_unit",
+  "leaderboard": [
+    {
+      "model_name": "XGBRegressor",
+      "rmse": 1.0338612976728097,
+      "r2": 0.9624092666758001,
+      "train_seconds": 0.89
+    },
+    {
+      "model_name": "GradientBoosting",
+      "rmse": 1.1431991606495753,
+      "r2": 0.9540378817193578,
+      "train_seconds": 1.21
+    },
+    {
+      "model_name": "RandomForest",
+      "rmse": 1.4037372213196304,
+      "r2": 0.9307008554267248,
+      "train_seconds": 0.472
+    },
+    {
+      "model_name": "LGBMRegressor",
+      "rmse": 1.5197187886439256,
+      "r2": 0.9187763114711003,
+      "train_seconds": 0.664
+    },
+    {
+      "model_name": "HistGradientBoosting",
+      "rmse": 1.5695411914336475,
+      "r2": 0.9133633446006924,
+      "train_seconds": 0.35
+    }
+  ]
+}
