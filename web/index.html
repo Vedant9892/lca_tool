@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>LCA Dashboard Prototype</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>AI-Driven LCA Tool — Demo</h1>
+    <p>Enter product and process details, then compute per-stage KPIs and totals.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Inputs</h2>
+      <form id="lca-form">
+        <div class="grid">
+          <label>Product
+            <select id="product" required>
+              <option value="pipe">Aluminium Pipe</option>
+              <option value="sheet">Aluminium Sheet</option>
+            </select>
+          </label>
+
+          <label>Units
+            <input id="units" type="number" min="1" value="10" required />
+          </label>
+
+          <label>Route
+            <select id="route" required>
+              <option value="conventional">Conventional (Bauxite)</option>
+              <option value="recycle">Recycle (Scrap)</option>
+            </select>
+          </label>
+
+          <label id="grade-wrap">Bauxite Grade
+            <select id="grade">
+              <option value="high">High</option>
+              <option value="medium" selected>Medium</option>
+              <option value="low">Low</option>
+            </select>
+          </label>
+
+          <label>Energy Source
+            <select id="energy" required>
+              <option value="renewable">Renewable</option>
+              <option value="non_renewable">Non-renewable</option>
+            </select>
+          </label>
+
+          <label>End of Life
+            <select id="eol" required>
+              <option value="recycle">Recycle</option>
+              <option value="reuse">Reuse</option>
+              <option value="landfill">Landfill</option>
+            </select>
+          </label>
+        </div>
+
+        <!-- Pipe dimensions -->
+        <div id="pipe-dims" class="dims">
+          <h3>Pipe Dimensions (m)</h3>
+          <div class="grid">
+            <label>Outer radius (m)
+              <input id="outer_radius_m" type="number" step="0.0001" value="0.05" />
+            </label>
+            <label>Inner radius (m)
+              <input id="inner_radius_m" type="number" step="0.0001" value="0.045" />
+            </label>
+            <label>Length (m)
+              <input id="length_m" type="number" step="0.01" value="2.0" />
+            </label>
+          </div>
+        </div>
+
+        <!-- Sheet dimensions -->
+        <div id="sheet-dims" class="dims hidden">
+          <h3>Sheet Dimensions (m)</h3>
+          <div class="grid">
+            <label>Thickness (m)
+              <input id="thickness_m" type="number" step="0.0001" value="0.004" />
+            </label>
+            <label>Width (m)
+              <input id="width_m" type="number" step="0.001" value="1.2" />
+            </label>
+            <label>Length (m)
+              <input id="sheet_length_m" type="number" step="0.01" value="2.5" />
+            </label>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="submit" id="submit-btn">Compute</button>
+          <span id="status"></span>
+        </div>
+      </form>
+    </section>
+
+    <section id="results" class="card hidden">
+      <h2>Results</h2>
+
+      <div class="summary-grid" id="summary">
+        <!-- Totals injected here -->
+      </div>
+
+      <h3>Per-Stage Breakdown</h3>
+      <div class="table-wrap">
+        <table id="stage-table">
+          <thead>
+            <tr>
+              <th>Stage</th>
+              <th>Scope</th>
+              <th>Units</th>
+              <th>Quality</th>
+              <th>Electricity (kWh)</th>
+              <th>CO₂ (kg)</th>
+              <th>Natural Gas (Nm³)</th>
+              <th>Wastewater (L)</th>
+              <th>Manufacturing Cost (USD)</th>
+              <th>Transport Cost (USD)</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <small>Prototype for internal testing — connects to http://localhost:8000/dashboard/stages</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

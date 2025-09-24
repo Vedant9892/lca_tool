@@ -1,0 +1,55 @@
+:root{
+  --bg:#0f172a;
+  --card:#111827;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+  --accent:#22c55e;
+  --danger:#ef4444;
+  --border:#1f2937;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;
+  background:var(--bg); color:var(--text);
+}
+header, footer{ padding:16px 20px; border-bottom:1px solid var(--border); }
+footer{ border-top:1px solid var(--border); border-bottom:none; color:var(--muted); }
+h1{ margin:0 0 6px 0; font-size:22px; }
+main{ max-width:1100px; margin:20px auto; padding:0 16px; }
+
+.card{
+  background:var(--card); border:1px solid var(--border); border-radius:10px;
+  padding:16px; margin-bottom:16px; box-shadow: 0 4px 16px rgba(0,0,0,.25);
+}
+.grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+.dims{ margin-top:10px; }
+.hidden{ display:none; }
+
+label{ display:flex; flex-direction:column; font-size:12px; color:var(--muted); gap:6px; }
+input, select{
+  background:#0b1220; color:var(--text); border:1px solid var(--border);
+  padding:10px 12px; border-radius:8px; outline:none;
+}
+input:focus, select:focus{ border-color:#334155; }
+
+.actions{ display:flex; align-items:center; gap:12px; margin-top:12px; }
+button{
+  background:var(--accent); color:#052e12; border:none; padding:10px 18px;
+  border-radius:8px; font-weight:600; cursor:pointer;
+}
+#status{ color:var(--muted); font-size:12px; }
+
+.summary-grid{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:12px;
+}
+.summary-card{
+  background:#0b1220; border:1px solid var(--border); border-radius:8px; padding:12px;
+}
+.summary-card h4{ margin:0 0 6px 0; font-size:13px; color:var(--muted); }
+.summary-card .value{ font-size:20px; font-weight:700; }
+
+.table-wrap{ overflow:auto; border:1px solid var(--border); border-radius:8px; }
+table{ width:100%; border-collapse:collapse; font-size:13px; }
+th, td{ padding:10px 12px; border-bottom:1px solid var(--border); }
+thead th{ background:#0b1220; color:var(--muted); position:sticky; top:0; }
+tbody tr:hover{ background:#0b1220; }
